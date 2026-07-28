@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #FBF4EC; }
+  a { color: #6E56CF; text-decoration: none; }
+  a:hover { color: #4F3AAE; text-decoration: underline; }
+  ::selection { background: #F0B42955; }
+</style>
+</helmet>
+
+<div style="font-family:'Inter',sans-serif; color:#221E1A; background:#FBF4EC; min-height:100vh;">
+
+  <!-- HERO -->
+  <div style="padding:88px 32px 64px; text-align:center; background:linear-gradient(180deg,#FDF3EA 0%,#FBEADB 100%); border-bottom:1px solid #EFE2D0;">
+    <div style="font-family:'Inter'; font-size:13px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#8A6F3B;">Foundational Design System</div>
+    <div style="font-family:'Lora',serif; font-size:52px; line-height:1.1; margin-top:16px; color:#1C1712;">Extracted from a warm, editorial<br>product reference</div>
+    <div style="font-size:17px; color:#6E6A64; max-width:640px; margin:20px auto 0; line-height:1.6;">Tokens and base components distilled from the attached reference screen — colors, type, spacing, and the primitives (buttons, fields, toggles, radios, checkboxes, badges, toasts) needed to build new screens consistently.</div>
+  </div>
+
+  <div style="max-width:1120px; margin:0 auto; padding:0 32px;">
+
+    <!-- ===== COLOR ===== -->
+    <div style="padding-top:80px;" data-screen-label="Colors">
+      <div style="font-family:'Inter'; font-size:13px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#8A6F3B;">01 — Color</div>
+      <div style="font-family:'Lora',serif; font-size:32px; margin-top:8px;">Palette</div>
+      <div style="color:#6E6A64; font-size:15px; margin-top:8px; max-width:640px; line-height:1.6;">A warm cream base, near-black ink and charcoal surfaces, and a two-color purple→gold accent gradient used sparingly for emphasis (badges, gradient text, active states).</div>
+
+      <div style="font-size:13px; font-weight:600; color:#8A8580; margin-top:40px; text-transform:uppercase; letter-spacing:0.04em;">Neutrals & surfaces</div>
+      <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:16px; margin-top:16px;">
+        <div>
+          <div style="height:72px; border-radius:12px; background:#FBF4EC; border:1px solid #EFE2D0;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Cream / BG</div>
+          <div style="font-size:12px; color:#9A958D;">#FBF4EC</div>
+        </div>
+        <div>
+          <div style="height:72px; border-radius:12px; background:#FDF3EA; border:1px solid #EFE2D0;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Peach 50</div>
+          <div style="font-size:12px; color:#9A958D;">#FDF3EA</div>
+        </div>
+        <div>
+          <div style="height:72px; border-radius:12px; background:#FBEADB; border:1px solid #EFE2D0;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Peach 100</div>
+          <div style="font-size:12px; color:#9A958D;">#FBEADB</div>
+        </div>
+        <div>
+          <div style="height:72px; border-radius:12px; background:#F8DDBE; border:1px solid #EFE2D0;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Peach 200</div>
+          <div style="font-size:12px; color:#9A958D;">#F8DDBE</div>
+        </div>
+        <div>
+          <div style="height:72px; border-radius:12px; background:#FFFFFF; border:1px solid #EFE2D0;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">White</div>
+          <div style="font-size:12px; color:#9A958D;">#FFFFFF</div>
+        </div>
+        <div>
+          <div style="height:72px; border-radius:12px; background:#2B2824;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600; color:#fff;">Charcoal</div>
+          <div style="font-size:12px; color:#9A958D;">#2B2824</div>
+        </div>
+      </div>
+
+      <div style="font-size:13px; font-weight:600; color:#8A8580; margin-top:32px; text-transform:uppercase; letter-spacing:0.04em;">Text</div>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:16px;">
+        <div>
+          <div style="height:56px; border-radius:12px; background:#1C1712; display:flex; align-items:center; justify-content:center; color:#fff; font-family:'Lora'; font-size:20px;">Aa</div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Ink / primary</div>
+          <div style="font-size:12px; color:#9A958D;">#1C1712</div>
+        </div>
+        <div>
+          <div style="height:56px; border-radius:12px; background:#6E6A64; display:flex; align-items:center; justify-content:center; color:#fff; font-family:'Lora'; font-size:20px;">Aa</div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Muted / secondary</div>
+          <div style="font-size:12px; color:#9A958D;">#6E6A64</div>
+        </div>
+        <div>
+          <div style="height:56px; border-radius:12px; background:#9A958D; display:flex; align-items:center; justify-content:center; color:#fff; font-family:'Lora'; font-size:20px;">Aa</div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Faint / placeholder</div>
+          <div style="font-size:12px; color:#9A958D;">#9A958D</div>
+        </div>
+        <div>
+          <div style="height:56px; border-radius:12px; background:#EFE2D0; display:flex; align-items:center; justify-content:center; color:#1C1712; font-family:'Lora'; font-size:20px;">Aa</div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Border / hairline</div>
+          <div style="font-size:12px; color:#9A958D;">#EFE2D0</div>
+        </div>
+      </div>
+
+      <div style="font-size:13px; font-weight:600; color:#8A8580; margin-top:32px; text-transform:uppercase; letter-spacing:0.04em;">Accent gradient (purple → gold)</div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:16px;">
+        <div>
+          <div style="height:72px; border-radius:12px; background:#8B7CF6;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Accent / violet</div>
+          <div style="font-size:12px; color:#9A958D;">#8B7CF6</div>
+        </div>
+        <div>
+          <div style="height:72px; border-radius:12px; background:linear-gradient(90deg,#8B7CF6,#F0B429);"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Accent gradient</div>
+          <div style="font-size:12px; color:#9A958D;">135deg, violet → gold</div>
+        </div>
+        <div>
+          <div style="height:72px; border-radius:12px; background:#F0B429;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Accent / gold</div>
+          <div style="font-size:12px; color:#9A958D;">#F0B429</div>
+        </div>
+      </div>
+
+      <div style="font-size:13px; font-weight:600; color:#8A8580; margin-top:32px; text-transform:uppercase; letter-spacing:0.04em;">Semantic (extrapolated to match palette warmth)</div>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:16px; margin-bottom:16px;">
+        <div>
+          <div style="height:56px; border-radius:12px; background:#3F7A52;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Success</div>
+          <div style="font-size:12px; color:#9A958D;">#3F7A52</div>
+        </div>
+        <div>
+          <div style="height:56px; border-radius:12px; background:#C4544A;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Danger</div>
+          <div style="font-size:12px; color:#9A958D;">#C4544A</div>
+        </div>
+        <div>
+          <div style="height:56px; border-radius:12px; background:#F0B429;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Warning</div>
+          <div style="font-size:12px; color:#9A958D;">#F0B429</div>
+        </div>
+        <div>
+          <div style="height:56px; border-radius:12px; background:#4C7EA8;"></div>
+          <div style="font-size:12px; margin-top:8px; font-weight:600;">Info</div>
+          <div style="font-size:12px; color:#9A958D;">#4C7EA8</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TYPOGRAPHY ===== -->
+    <div style="padding-top:88px;" data-screen-label="Typography">
+      <div style="font-family:'Inter'; font-size:13px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#8A6F3B;">02 — Typography</div>
+      <div style="font-family:'Lora',serif; font-size:32px; margin-top:8px;">Type system</div>
+      <div style="color:#6E6A64; font-size:15px; margin-top:8px; max-width:680px; line-height:1.6;">Display headlines use a warm serif (Lora, standing in for the reference's editorial serif — swap for the exact family/webfonts once available). UI text, labels and body copy use Inter.</div>
+
+      <div style="margin-top:40px; display:flex; flex-direction:column; gap:28px;">
+        <div style="display:flex; align-items:baseline; gap:24px; border-bottom:1px solid #EFE2D0; padding-bottom:20px;">
+          <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A958D;">Display / 52·Lora</div>
+          <div style="font-family:'Lora',serif; font-size:52px; line-height:1.1;">AI Powered Email</div>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:24px; border-bottom:1px solid #EFE2D0; padding-bottom:20px;">
+          <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A958D;">H1 / 40·Lora</div>
+          <div style="font-family:'Lora',serif; font-size:40px; line-height:1.15;">Simple pricing for teams</div>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:24px; border-bottom:1px solid #EFE2D0; padding-bottom:20px;">
+          <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A958D;">H2 / 28·Lora</div>
+          <div style="font-family:'Lora',serif; font-size:28px; line-height:1.2;">Bank-level security for peace of mind</div>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:24px; border-bottom:1px solid #EFE2D0; padding-bottom:20px;">
+          <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A958D;">H3 / 20·Lora</div>
+          <div style="font-family:'Lora',serif; font-size:20px; line-height:1.3;">Frequently asked questions</div>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:24px; border-bottom:1px solid #EFE2D0; padding-bottom:20px;">
+          <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A958D;">Body / 16·Inter</div>
+          <div style="font-family:'Inter'; font-size:16px; line-height:1.6; max-width:560px;">Aceai triages inboxes, drafts high-quality replies, and automates repetitive email work with confidence.</div>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:24px; border-bottom:1px solid #EFE2D0; padding-bottom:20px;">
+          <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A958D;">Small / 13·Inter</div>
+          <div style="font-family:'Inter'; font-size:13px; color:#6E6A64;">10,000 credits per month (annual billing)</div>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:24px; padding-bottom:8px;">
+          <div style="width:150px; flex-shrink:0; font-size:12px; color:#9A958D;">Label / 12·Inter·600</div>
+          <div style="font-family:'Inter'; font-size:12px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:#8A8580;">Best for teams</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SPACING / RADIUS / SHADOW ===== -->
+    <div style="padding-top:88px;" data-screen-label="Spacing and Elevation">
+      <div style="font-family:'Inter'; font-size:13px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#8A6F3B;">03 — Spacing &amp; elevation</div>
+      <div style="font-family:'Lora',serif; font-size:32px; margin-top:8px;">Spacing, radius, shadow</div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; margin-top:32px;">
+        <div>
+          <div style="font-size:13px; font-weight:600; color:#8A8580; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:16px;">Spacing scale (4px base)</div>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:4px; height:12px; background:#8B7CF6;"></div><div style="font-size:12px; color:#6E6A64;">4 — xs</div></div>
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:8px; height:12px; background:#8B7CF6;"></div><div style="font-size:12px; color:#6E6A64;">8 — sm</div></div>
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:16px; height:12px; background:#8B7CF6;"></div><div style="font-size:12px; color:#6E6A64;">16 — md</div></div>
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:24px; height:12px; background:#8B7CF6;"></div><div style="font-size:12px; color:#6E6A64;">24 — lg</div></div>
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:40px; height:12px; background:#8B7CF6;"></div><div style="font-size:12px; color:#6E6A64;">40 — xl</div></div>
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:64px; height:12px; background:#8B7CF6;"></div><div style="font-size:12px; color:#6E6A64;">64 — 2xl</div></div>
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:96px; height:12px; background:#8B7CF6;"></div><div style="font-size:12px; color:#6E6A64;">96 — 3xl</div></div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:13px; font-weight:600; color:#8A8580; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:16px;">Corner radius</div>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:32px; height:32px; background:#FBEADB; border-radius:6px; border:1px solid #EFE2D0;"></div><div style="font-size:12px; color:#6E6A64;">6px — controls (checkbox)</div></div>
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:32px; height:32px; background:#FBEADB; border-radius:10px; border:1px solid #EFE2D0;"></div><div style="font-size:12px; color:#6E6A64;">10px — inputs, small buttons</div></div>
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:32px; height:32px; background:#FBEADB; border-radius:16px; border:1px solid #EFE2D0;"></div><div style="font-size:12px; color:#6E6A64;">16px — cards</div></div>
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:32px; height:32px; background:#FBEADB; border-radius:24px; border:1px solid #EFE2D0;"></div><div style="font-size:12px; color:#6E6A64;">24px — panels, dark sections</div></div>
+            <div style="display:flex; align-items:center; gap:12px;"><div style="width:32px; height:32px; background:#FBEADB; border-radius:999px; border:1px solid #EFE2D0;"></div><div style="font-size:12px; color:#6E6A64;">999px — pills, badges, buttons</div></div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:13px; font-weight:600; color:#8A8580; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:16px;">Shadow</div>
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div style="width:100%; height:44px; background:#fff; border-radius:12px; box-shadow:0 1px 2px rgba(28,23,18,0.06);"></div>
+            <div style="font-size:12px; color:#6E6A64; margin-top:-8px;">sm — 0 1px 2px rgba(28,23,18,.06)</div>
+            <div style="width:100%; height:44px; background:#fff; border-radius:12px; box-shadow:0 8px 24px rgba(28,23,18,0.08);"></div>
+            <div style="font-size:12px; color:#6E6A64; margin-top:-8px;">md — 0 8px 24px rgba(28,23,18,.08)</div>
+            <div style="width:100%; height:44px; background:#fff; border-radius:12px; box-shadow:0 20px 48px rgba(28,23,18,0.14);"></div>
+            <div style="font-size:12px; color:#6E6A64; margin-top:-8px;">lg — 0 20px 48px rgba(28,23,18,.14)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== BUTTONS ===== -->
+    <div style="padding-top:96px;" data-screen-label="Buttons">
+      <div style="font-family:'Inter'; font-size:13px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:#8A6F3B;">04 — Components</div>
+      <div style="font-family:'Lora',serif; font-size:32px; margin-top:8px;">Buttons</div>
+
+      <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center; margin-top:32px;">
+        <button style="font-family:'Inter'; font-weight:600; font-size:14px; background:#1C1712; color:#fff; border:none; border-radius:999px; padding:13px 24px; cursor:pointer;" style-hover="background:#332C24;">Primary button</button>
+        <button style="font-family:'Inter'; font-weight:600; font-size:14px; background:transparent; color:#1C1712; border:1px solid #DCCFBC; border-radius:999px; padding:12px 24px; cursor:pointer;" style-hover="background:#F5EADA;">Secondary button</button>
+        <button style="font-family:'Inter'; font-weight:600; font-size:14px; background:transparent; color:#6E6A64; border:none; border-radius:999px; padding:13px 20px; cursor:pointer;" style-hover="background:#F0E6D6; color:#1C1712;">Ghost button</button>
+        <button style="font-family:'Inter'; font-weight:600; font-size:14px; background:linear-gradient(90deg,#8B7CF6,#F0B429); color:#1C1712; border:none; border-radius:999px; padding:13px 24px; cursor:pointer;" style-hover="filter:brightness(1.05);">Accent button</button>
+        <button disabled="{{ true }}" style="font-family:'Inter'; font-weight:600; font-size:14px; background:#EFE6D8; color:#B7AE9F; border:none; border-radius:999px; padding:13px 24px; cursor:not-allowed;">Disabled</button>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center; margin-top:16px;">
+        <button style="font-family:'Inter'; font-weight:600; font-size:13px; background:#1C1712; color:#fff; border:none; border-radius:999px; padding:9px 18px; cursor:pointer;">Small</button>
+        <button style="font-family:'Inter'; font-weight:600; font-size:14px; background:#1C1712; color:#fff; border:none; border-radius:999px; padding:13px 24px; cursor:pointer;">Medium</button>
+        <button style="font-family:'Inter'; font-weight:600; font-size:15px; background:#1C1712; color:#fff; border:none; border-radius:999px; padding:16px 30px; cursor:pointer;">Large</button>
+        <button style="font-family:'Inter'; font-weight:600; font-size:14px; background:#1C1712; color:#fff; border:none; border-radius:999px; padding:13px 20px 13px 24px; cursor:pointer; display:flex; align-items:center; gap:10px;">With trailing dot<span style="width:26px; height:26px; border-radius:999px; background:#fff; display:inline-flex; align-items:center; justify-content:center; color:#1C1712; font-size:12px;">↗</span></button>
+      </div>
+    </div>
+
+    <!-- ===== TEXT FIELD ===== -->
+    <div style="padding-top:80px;" data-screen-label="Text Fields">
+      <div style="font-family:'Lora',serif; font-size:24px;">Text fields</div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:24px; max-width:900px;">
+        <div>
+          <div style="font-size:13px; font-weight:600; margin-bottom:8px;">Default</div>
+          <input placeholder="you@company.com" style="width:100%; box-sizing:border-box; font-family:'Inter'; font-size:14px; padding:12px 16px; border-radius:10px; border:1px solid #DCCFBC; background:#fff; color:#1C1712;" style-focus="outline:none; border-color:#8B7CF6; box-shadow:0 0 0 3px #8B7CF61A;"/>
+        </div>
+        <div>
+          <div style="font-size:13px; font-weight:600; margin-bottom:8px;">Filled</div>
+          <input placeholder="Search…" style="width:100%; box-sizing:border-box; font-family:'Inter'; font-size:14px; padding:12px 16px; border-radius:10px; border:1px solid transparent; background:#F5EADA; color:#1C1712;" style-focus="outline:none; border-color:#8B7CF6;"/>
+        </div>
+        <div>
+          <div style="font-size:13px; font-weight:600; margin-bottom:8px; color:#C4544A;">Error</div>
+          <input value="invalid@" style="width:100%; box-sizing:border-box; font-family:'Inter'; font-size:14px; padding:12px 16px; border-radius:10px; border:1px solid #C4544A; background:#fff; color:#1C1712;"/>
+          <div style="font-size:12px; color:#C4544A; margin-top:6px;">Enter a valid email address</div>
+        </div>
+        <div>
+          <div style="font-size:13px; font-weight:600; margin-bottom:8px; color:#B7AE9F;">Disabled</div>
+          <input value="Locked" disabled="{{ true }}" style="width:100%; box-sizing:border-box; font-family:'Inter'; font-size:14px; padding:12px 16px; border-radius:10px; border:1px solid #EFE2D0; background:#F5F1E9; color:#B7AE9F;"/>
+        </div>
+        <div>
+          <div style="font-size:13px; font-weight:600; margin-bottom:8px;">Textarea</div>
+          <textarea placeholder="Write a message…" rows="3" style="width:100%; box-sizing:border-box; font-family:'Inter'; font-size:14px; padding:12px 16px; border-radius:10px; border:1px solid #DCCFBC; background:#fff; color:#1C1712; resize:vertical;"></textarea>
+        </div>
+        <div>
+          <div style="font-size:13px; font-weight:600; margin-bottom:8px;">Select</div>
+          <select style="width:100%; box-sizing:border-box; font-family:'Inter'; font-size:14px; padding:12px 16px; border-radius:10px; border:1px solid #DCCFBC; background:#fff; color:#1C1712;">
+            <option>Starter plan</option>
+            <option>Growth plan</option>
+            <option>Scale plan</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TOGGLE / SEGMENTED ===== -->
+    <div style="padding-top:80px;" data-screen-label="Toggles and Segmented Controls">
+      <div style="font-family:'Lora',serif; font-size:24px;">Toggle switches &amp; segmented control</div>
+      <div style="display:flex; flex-wrap:wrap; gap:40px; align-items:center; margin-top:24px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div onClick="{{ toggleSwitch }}" style="width:44px; height:26px; border-radius:999px; background:{{ switchBg }}; position:relative; cursor:pointer; transition:background 0.15s;">
+            <div style="width:20px; height:20px; border-radius:999px; background:#fff; position:absolute; top:3px; left:{{ switchLeft }}px; transition:left 0.15s; box-shadow:0 1px 3px rgba(0,0,0,0.2);"></div>
+          </div>
+          <div style="font-size:14px;">{{ switchLabelText }}</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px; background:#fff; border:1px solid #EFE2D0; border-radius:999px; padding:4px;">
+          <div onClick="{{ selectAnnual }}" style="font-family:'Inter'; font-size:13px; font-weight:600; padding:9px 18px; border-radius:999px; cursor:pointer; background:{{ annualBg }}; color:#1C1712;">Annual billing</div>
+          <div style="font-family:'Inter'; font-size:11px; font-weight:600; padding:4px 10px; border-radius:999px; background:linear-gradient(90deg,#8B7CF6,#F0B429); color:#1C1712;">Save $60</div>
+          <div onClick="{{ selectMonthly }}" style="font-family:'Inter'; font-size:13px; font-weight:600; padding:9px 18px; border-radius:999px; cursor:pointer; background:{{ monthlyBg }}; color:#6E6A64;">Monthly billing</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RADIO ===== -->
+    <div style="padding-top:80px;" data-screen-label="Radio Buttons">
+      <div style="font-family:'Lora',serif; font-size:24px;">Radio buttons</div>
+      <div style="display:flex; flex-direction:column; gap:16px; margin-top:24px; max-width:360px;">
+        <sc-for list="{{ radioOptions }}" as="opt" hint-placeholder-count="3">
+          <div onClick="{{ opt.select }}" style="display:flex; align-items:center; gap:12px; cursor:pointer;">
+            <div style="width:20px; height:20px; border-radius:999px; border:2px solid {{ opt.borderColor }}; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <sc-if value="{{ opt.selected }}"><div style="width:10px; height:10px; border-radius:999px; background:#1C1712;"></div></sc-if>
+            </div>
+            <div style="font-size:14px; color:#1C1712;">{{ opt.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- ===== CHECKBOX ===== -->
+    <div style="padding-top:80px;" data-screen-label="Checkboxes">
+      <div style="font-family:'Lora',serif; font-size:24px;">Checkboxes</div>
+      <div style="display:flex; flex-direction:column; gap:16px; margin-top:24px; max-width:360px;">
+        <sc-for list="{{ checkOptions }}" as="opt" hint-placeholder-count="3">
+          <div onClick="{{ opt.toggle }}" style="display:flex; align-items:center; gap:12px; cursor:pointer;">
+            <div style="width:20px; height:20px; border-radius:6px; border:2px solid {{ opt.borderColor }}; background:{{ opt.bg }}; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <sc-if value="{{ opt.checked }}"><div style="width:9px; height:5px; border-left:2px solid #fff; border-bottom:2px solid #fff; transform:rotate(-45deg) translateY(-1px);"></div></sc-if>
+            </div>
+            <div style="font-size:14px; color:#1C1712;">{{ opt.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- ===== BADGES ===== -->
+    <div style="padding-top:80px;" data-screen-label="Badges and Pills">
+      <div style="font-family:'Lora',serif; font-size:24px;">Badges &amp; pills</div>
+      <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; align-items:center;">
+        <div style="font-family:'Inter'; font-size:12px; font-weight:600; padding:6px 14px; border-radius:999px; background:#EDE7FB; color:#6E56CF;">Setup in 1 minute</div>
+        <div style="font-family:'Inter'; font-size:12px; font-weight:600; padding:6px 14px; border-radius:999px; background:#FCEFD3; color:#8A6F1F;">Ready in 5 minutes</div>
+        <div style="font-family:'Inter'; font-size:12px; font-weight:600; padding:6px 14px; border-radius:999px; background:linear-gradient(90deg,#8B7CF6,#F0B429); color:#1C1712;">Best for teams</div>
+        <div style="font-family:'Inter'; font-size:12px; font-weight:600; padding:6px 14px; border-radius:999px; background:#E2EFE6; color:#3F7A52;">Verified</div>
+        <div style="font-family:'Inter'; font-size:12px; font-weight:600; padding:6px 14px; border-radius:999px; background:#F7E3E1; color:#C4544A;">Overdue</div>
+        <div style="font-family:'Inter'; font-size:12px; font-weight:600; padding:6px 14px; border-radius:999px; background:#F5F1E9; color:#6E6A64; border:1px solid #EFE2D0;">Neutral</div>
+      </div>
+    </div>
+
+    <!-- ===== CARDS ===== -->
+    <div style="padding-top:80px;" data-screen-label="Cards">
+      <div style="font-family:'Lora',serif; font-size:24px;">Cards</div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:24px;">
+        <div style="background:#fff; border-radius:16px; padding:24px; box-shadow:0 8px 24px rgba(28,23,18,0.06); border:1px solid #F1E9DC;">
+          <div style="font-size:12px; font-weight:600; padding:4px 10px; border-radius:999px; background:#EDE7FB; color:#6E56CF; display:inline-block;">Starter</div>
+          <div style="font-family:'Lora',serif; font-size:32px; margin-top:16px;">$20</div>
+          <div style="font-size:13px; color:#9A958D; margin-top:4px;">10,000 credits / month</div>
+          <div style="height:1px; background:#EFE2D0; margin:20px 0;"></div>
+          <div style="font-size:14px; color:#6E6A64; line-height:1.8;">Built for founders and operators</div>
+        </div>
+        <div style="background:linear-gradient(180deg,#fff 0%,#FDF5EA 100%); border-radius:16px; padding:24px; box-shadow:0 20px 48px rgba(28,23,18,0.12); border:1px solid #F1E9DC; position:relative; transform:translateY(-8px);">
+          <div style="position:absolute; top:-1px; left:0; right:0; height:6px; background:linear-gradient(90deg,#8B7CF6,#F0B429); border-radius:16px 16px 0 0;"></div>
+          <div style="font-size:12px; font-weight:600; padding:4px 10px; border-radius:999px; background:linear-gradient(90deg,#8B7CF6,#F0B429); color:#1C1712; display:inline-block;">Best for teams</div>
+          <div style="font-family:'Lora',serif; font-size:32px; margin-top:16px;">$40</div>
+          <div style="font-size:13px; color:#9A958D; margin-top:4px;">20,000 credits / month</div>
+          <div style="height:1px; background:#EFE2D0; margin:20px 0;"></div>
+          <div style="font-size:14px; color:#6E6A64; line-height:1.8;">For growing teams with high volume</div>
+        </div>
+        <div style="background:#fff; border-radius:16px; padding:24px; box-shadow:0 8px 24px rgba(28,23,18,0.06); border:1px solid #F1E9DC;">
+          <div style="font-size:12px; font-weight:600; padding:4px 10px; border-radius:999px; background:#F5F1E9; color:#6E6A64; display:inline-block;">Scale</div>
+          <div style="font-family:'Lora',serif; font-size:32px; margin-top:16px;">Get in touch</div>
+          <div style="font-size:13px; color:#9A958D; margin-top:4px;">Custom workflows &amp; governance</div>
+          <div style="height:1px; background:#EFE2D0; margin:20px 0;"></div>
+          <div style="font-size:14px; color:#6E6A64; line-height:1.8;">For large orgs at scale</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TOAST ===== -->
+    <div style="padding-top:80px; padding-bottom:100px;" data-screen-label="Toast Notifications">
+      <div style="font-family:'Lora',serif; font-size:24px;">Toast / notifications</div>
+      <div style="margin-top:24px;">
+        <button onClick="{{ showToast }}" style="font-family:'Inter'; font-weight:600; font-size:14px; background:#1C1712; color:#fff; border:none; border-radius:999px; padding:13px 24px; cursor:pointer;">Trigger toast</button>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:24px;">
+        <div style="background:#2B2824; border-radius:14px; padding:16px 18px; display:flex; align-items:center; gap:12px; box-shadow:0 12px 32px rgba(0,0,0,0.2);">
+          <div style="width:8px; height:8px; border-radius:999px; background:#F0B429; flex-shrink:0;"></div>
+          <div style="font-size:13px; color:#fff;">Draft saved automatically</div>
+        </div>
+        <div style="background:#fff; border:1px solid #EFE2D0; border-radius:14px; padding:16px 18px; display:flex; align-items:center; gap:12px; box-shadow:0 8px 24px rgba(28,23,18,0.08);">
+          <div style="width:8px; height:8px; border-radius:999px; background:#3F7A52; flex-shrink:0;"></div>
+          <div style="font-size:13px; color:#1C1712;">Email sent to Matthew</div>
+        </div>
+        <div style="background:#fff; border:1px solid #F1D6D2; border-radius:14px; padding:16px 18px; display:flex; align-items:center; gap:12px; box-shadow:0 8px 24px rgba(28,23,18,0.08);">
+          <div style="width:8px; height:8px; border-radius:999px; background:#C4544A; flex-shrink:0;"></div>
+          <div style="font-size:13px; color:#1C1712;">Couldn't connect inbox — retry</div>
+        </div>
+      </div>
+      <sc-if value="{{ toastVisible }}">
+        <div style="position:fixed; bottom:32px; left:50%; transform:translateX(-50%); background:#2B2824; color:#fff; padding:14px 22px; border-radius:999px; font-size:13px; font-family:'Inter'; box-shadow:0 16px 40px rgba(0,0,0,0.25); display:flex; align-items:center; gap:10px; z-index:100;">
+          <div style="width:8px; height:8px; border-radius:999px; background:#F0B429;"></div>
+          Saved — nice work!
+        </div>
+      </sc-if>
+    </div>
+
+    <!-- ===== DARK SURFACE SAMPLE ===== -->
+    <div style="padding-bottom:100px;" data-screen-label="Dark Surface">
+      <div style="font-family:'Lora',serif; font-size:24px;">Dark surface panel</div>
+      <div style="margin-top:24px; background:#2B2824; border-radius:24px; padding:56px 40px; text-align:center;">
+        <div style="font-family:'Lora',serif; font-size:32px; color:#fff;">Bank-level <span style="background:linear-gradient(90deg,#8B7CF6,#F0B429); -webkit-background-clip:text; background-clip:text; color:transparent;">security</span> for peace of mind</div>
+        <div style="font-size:14px; color:#B8B2A8; margin-top:12px; max-width:480px; margin-left:auto; margin-right:auto; line-height:1.6;">With CASA Tier 3 compliance and industry-leading encryption, data stays private, secure, and protected at all times.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    switchOn: true,
+    billing: 'annual',
+    radio: 'growth',
+    checks: { a: true, b: false, c: true },
+    toastVisible: false,
+  };
+
+  toggleSwitch = () => this.setState(s => ({ switchOn: !s.switchOn }));
+  selectAnnual = () => this.setState({ billing: 'annual' });
+  selectMonthly = () => this.setState({ billing: 'monthly' });
+
+  showToast = () => {
+    this.setState({ toastVisible: true });
+    clearTimeout(this._t);
+    this._t = setTimeout(() => this.setState({ toastVisible: false }), 2200);
+  };
+
+  renderVals() {
+    const radioLabels = [
+      { key: 'starter', label: 'Starter plan' },
+      { key: 'growth', label: 'Growth plan' },
+      { key: 'scale', label: 'Scale plan' },
+    ];
+    const radioOptions = radioLabels.map(o => {
+      const selected = this.state.radio === o.key;
+      return {
+        label: o.label,
+        selected,
+        borderColor: selected ? '#1C1712' : '#DCCFBC',
+        select: () => this.setState({ radio: o.key }),
+      };
+    });
+
+    const checkLabels = [
+      { key: 'a', label: 'Draft e-mails' },
+      { key: 'b', label: 'Organize inbox' },
+      { key: 'c', label: 'Sort by priority' },
+    ];
+    const checkOptions = checkLabels.map(o => {
+      const checked = this.state.checks[o.key];
+      return {
+        label: o.label,
+        checked,
+        borderColor: checked ? '#1C1712' : '#DCCFBC',
+        bg: checked ? '#1C1712' : 'transparent',
+        toggle: () => this.setState(s => ({ checks: { ...s.checks, [o.key]: !s.checks[o.key] } })),
+      };
+    });
+
+    return {
+      switchOn: this.state.switchOn,
+      switchLeft: this.state.switchOn ? 21 : 3,
+      switchBg: this.state.switchOn ? '#1C1712' : '#DCCFBC',
+      switchLabelText: `Auto-reply ${this.state.switchOn ? '(on)' : '(off)'}`,
+      toggleSwitch: this.toggleSwitch,
+      annualBg: this.state.billing === 'annual' ? '#F5EADA' : 'transparent',
+      monthlyBg: this.state.billing === 'monthly' ? '#F5EADA' : 'transparent',
+      selectAnnual: this.selectAnnual,
+      selectMonthly: this.selectMonthly,
+      radioOptions,
+      checkOptions,
+      toastVisible: this.state.toastVisible,
+      showToast: this.showToast,
+    };
+  }
+}
+
+</script>
+</body>
+</html>

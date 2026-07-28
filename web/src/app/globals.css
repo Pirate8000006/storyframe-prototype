@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --surface-bg: #fbf4ec;
+  --surface-white: #ffffff;
+  --surface-dark: #2b2824;
+
+  --text-primary: #1c1712;
+  --text-secondary: #6e6a64;
+  --text-placeholder: #9a958d;
+  --text-on-dark: #ffffff;
+
+  --border-hairline: #efe2d0;
+  --border-default: #dccfbc;
+
+  --accent-violet: #8b7cf6;
+  --accent-gold: #f0b429;
+
+  --success: #3f7a52;
+  --success-tint: #e2efe6;
+  --danger: #c4544a;
+  --danger-tint: #f7e3e1;
+  --warning: #f0b429;
+  --warning-tint: #fcefd3;
+  --info: #4c7ea8;
+  --info-tint: #ede7fb;
+  --neutral-tint: #f5f1e9;
+
+  --shadow-sm: 0 1px 2px rgba(28, 23, 18, 0.06);
+  --shadow-md: 0 8px 24px rgba(28, 23, 18, 0.08);
+  --shadow-lg: 0 20px 48px rgba(28, 23, 18, 0.14);
+}
+
+@theme inline {
+  --font-sans: var(--font-sans);
+
+  --color-bg: var(--surface-bg);
+  --color-white: var(--surface-white);
+  --color-dark: var(--surface-dark);
+
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-placeholder: var(--text-placeholder);
+  --color-on-dark: var(--text-on-dark);
+
+  --color-hairline: var(--border-hairline);
+  --color-border: var(--border-default);
+
+  --color-violet: var(--accent-violet);
+  --color-gold: var(--accent-gold);
+
+  --color-success: var(--success);
+  --color-success-tint: var(--success-tint);
+  --color-danger: var(--danger);
+  --color-danger-tint: var(--danger-tint);
+  --color-warning: var(--warning);
+  --color-warning-tint: var(--warning-tint);
+  --color-info: var(--info);
+  --color-info-tint: var(--info-tint);
+  --color-neutral-tint: var(--neutral-tint);
+
+  --shadow-card-sm: var(--shadow-sm);
+  --shadow-card-md: var(--shadow-md);
+  --shadow-card-lg: var(--shadow-lg);
+}
+
+body {
+  background: var(--surface-bg);
+  color: var(--text-primary);
+}
